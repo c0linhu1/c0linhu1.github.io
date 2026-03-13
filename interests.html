@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colin – Interests</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">Colin</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="interests.html" class="active">Interests</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header (h2 — smaller than h1 on Home) -->
+  <header class="hero">
+    <div class="container">
+      <h2 style="font-family:'Playfair Display',serif; font-size:2rem;">
+        Projects &amp; Interests
+      </h2>
+      <p class="subtitle">A closer look at what I build and study</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Projects -->
+    <section class="section">
+      <h3>Event-Driven Market Analysis Platform</h3>
+
+      <!-- REPLACE src with a real screenshot or relevant image -->
+      <img
+        src="https://placehold.co/900x400?text=Project+Screenshot"
+        alt="Market Analysis Platform screenshot"
+        class="content-img"
+      />
+
+      <p>
+        One of my flagship projects is an Event-Driven Market Analysis Platform
+        built around a Discord bot. The system aggregates financial data from
+        multiple sources — including Finnhub, Marketaux, and Twitter — and stores
+        it in a dual-database architecture using SQLite for local development and
+        MongoDB Atlas on Google Cloud Platform for production. A switchable
+        environment variable lets me toggle between the two without changing
+        application code, which keeps the development workflow fast and flexible.
+      </p>
+      <p>
+        The bot features SHA-256-based deduplication to prevent duplicate event
+        storage, a dedicated equity-news module for ticker-specific event
+        tracking, and a planned NLP-based semantic novelty engine powered by the
+        all-MiniLM-L6-v2 sentence-transformer model. The full project outline
+        spans eight phases and includes statistical rigor requirements such as
+        bootstrap confidence intervals, Benjamini-Hochberg correction for multiple
+        comparisons, and out-of-sample validation to guard against overfitting.
+      </p>
+
+      <h3>Key Technical Skills</h3>
+      <ul>
+        <li>Python (pandas, scikit-learn, XGBoost, PyTorch, NLP pipelines)</li>
+        <li>SQL &amp; database design (PostgreSQL, SQLite, MongoDB Atlas)</li>
+        <li>Cloud platforms (AWS RDS/S3, GCP)</li>
+        <li>Data visualization (Tableau, Altair, D3.js, Panel/HoloViz)</li>
+        <li>Version control &amp; deployment (Git, GitHub Pages, Docker)</li>
+        <li>Financial data APIs (Finnhub, Yahoo Finance, Bloomberg Terminal)</li>
+      </ul>
+    </section>
+
+    <!-- Credit Risk Project -->
+    <section class="section">
+      <h3>Credit Risk Scoring Model</h3>
+      <p>
+        Another major portfolio piece is a Credit Risk Scoring Model trained on
+        over 32,000 loan records. The project uses PostgreSQL hosted on AWS RDS
+        with S3 integration for data storage, and features 13 SQL views built with
+        window functions and common table expressions. On the modeling side, I
+        trained and compared three classifiers — Logistic Regression, Random
+        Forest, and XGBoost — achieving a best AUC-ROC of 0.90 and 73 percent
+        recall on the positive class. Five Tableau dashboards round out the
+        project, giving stakeholders an interactive way to explore default risk
+        across borrower segments.
+      </p>
+
+      <h3>What I'm Exploring Next</h3>
+      <ol>
+        <li>Quantitative research techniques — Bayesian volatility modeling and high-frequency risk metrics</li>
+        <li>NLP for finance — building a semantic novelty engine for market event deduplication</li>
+        <li>Full-stack development — Bloomberg and Pershing integrations during my upcoming internship at Brean Capital</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">&copy; 2026 Colin. Built with HTML &amp; CSS.</div>
+  </footer>
+
+</body>
+</html>
